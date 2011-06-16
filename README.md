@@ -71,9 +71,9 @@ inside your <application> tag, then the following code is used inside your appli
       public void exit(String error) {}
     };
 
-   String url = "https://github.com/downloads/couchbaselabs/Android-Couchbase/";
-   String release = "release-0.1";
-   couchServiceConnection = CouchDB.getService(getBaseContext(), url, release, mCallback);
+    String url = "https://github.com/downloads/couchbaselabs/Android-Couchbase/";
+    String release = "release-0.1";
+    ServiceConnection couchServiceConnection = CouchDB.getService(getBaseContext(), url, release, mCallback);
 
 for example of all of these you can check inside the Android-Demo folder
 
