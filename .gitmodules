@@ -1,0 +1,6 @@
+[submodule "libcouch-android"]
+	path = libcouch-android
+	url = git@github.com:couchbaselabs/libcouch-android.git
+[submodule "Android-Demo"]
+	path = Android-Demo
+	url = git@github.com:couchbaselabs/Android-Demo.git
