@@ -41,6 +41,8 @@ You should now be able to run CouchApp by right clicking on the CouchApp project
 
 Start a new Android project, right click your new project -> Properties -> Android and on the lower libraries panel press "Add" and select the LibCouch project
 
+Copy assets/release-0.1.tgz.jpg from LibCouch/assets into your projects assets directory
+
 back in the properties dialog pick Java Build Path -> Libraries and Add JARS, navigate to LibCouch/lib and choose both commons-compress-1.0.jar and commons-io.2.0.1.jar
 
 Inside your AndroidManifest.xml you will need the following definitions inside the <manifest> tag
@@ -71,9 +73,8 @@ inside your <application> tag, then the following code is used inside your appli
       public void exit(String error) {}
     };
 
-    String url = "https://github.com/downloads/couchbaselabs/Android-Couchbase/";
     String release = "release-0.1";
-    ServiceConnection couchServiceConnection = CouchDB.getService(getBaseContext(), url, release, mCallback);
+    ServiceConnection couchServiceConnection = CouchDB.getService(getBaseContext(), null, release, mCallback);
 
 for example of all of these you can check inside the Android-Demo folder
 
