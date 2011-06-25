@@ -12,7 +12,7 @@ What this means for you:
 
 If you just want to get started, jump to **Getting Started**.
 
-The biggest thing we need help with is size optimization - currently a Release build adds about 7 MB to your application. We are targeting 5 MB for our initial round of optimizations. It can definitely go lower but that work might take longer.
+The biggest thing we need help with is size optimization - currently a Release build adds about 4 MB to your application (reported as 13MB).
 
 ## Join us
 
@@ -80,7 +80,7 @@ for example of all of these you can check inside the Android-Demo folder
 
 ## Build information
 
-The current build of Android Couchbase downloads the binaries from github during the installation. There is information on how to build these binaries on the [build-android-couch](https://github.com/couchbaselabs/build-android-couch) project.
+The current build of Android Couchbase embed the CouchDB binaries. There is information on how to build these binaries on the [build-android-couch](https://github.com/couchbaselabs/build-android-couch) project.
 
 ## License
 
