@@ -46,9 +46,11 @@ Copy assets/release-0.1.tgz.jpg from LibCouch/assets into your projects assets d
 back in the properties dialog pick Java Build Path -> Libraries and Add JARS, navigate to LibCouch/lib and choose both commons-compress-1.0.jar and commons-io.2.0.1.jar
 
 Inside your AndroidManifest.xml you will need the following definitions inside the <manifest> tag
+
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
 The following code is what is needed in your application to start Couchbase as a service
 
 as well as
